@@ -1,0 +1,31 @@
+.bg-nav{
+    box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+    background: #fff;
+    z-index: 1000;
+  }
+  .navbar .navbar-brand{
+    color: #0f056b;
+    font-weight: bold;
+  }
+  .navbar-light .navbar-nav .nav-link {
+      color: #666;
+      font-weight: bold;
+  }
+  .navbar-light .navbar-nav .nav-link:hover{
+      color: #fff;
+      border-radius: 5px;
+  }
+  .navbar-text{
+    color: #666;
+      font-weight: bold;
+  }
+  .container{
+    margin-top: 2rem;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+  }
+  .red-icon{
+    color: red;
+    cursor: pointer;
+  }
