@@ -1,34 +1,34 @@
-<?php
+<!-- <?php
 
-require_once('connect.php');
+        require_once('connect.php');
 
-$id = $_GET['id'];
-$selSql = "SELECT * FROM `employes` WHERE id=$id";
-$res = mysqli_query($connect, $selSql);
-$r = mysqli_fetch_assoc($res);
+        $id = $_GET['id'];
+        $selSql = "SELECT * FROM `employes` WHERE id=$id";
+        $res = mysqli_query($connect, $selSql);
+        $r = mysqli_fetch_assoc($res);
 
-if (isset($_POST) & !empty($_POST)) {
-    $matricule = ($_POST['matricule']);
-    $nom = ($_POST['nom']);
-    $prenom = ($_POST['prénom']);
-    $date_naissance = ($_POST['date_naissance']);
-    $departement = ($_POST['département']);
-    $salaire = ($_POST['salaire']);
-    $fonction = ($_POST['fonction']);
-    $photo = ($_POST['photo']);
+        if (isset($_POST) & !empty($_POST)) {
+            $matricule = ($_POST['matricule']);
+            $nom = ($_POST['nom']);
+            $prenom = ($_POST['prénom']);
+            $date_naissance = ($_POST['date_naissance']);
+            $departement = ($_POST['département']);
+            $salaire = ($_POST['salaire']);
+            $fonction = ($_POST['fonction']);
+            $photo = ($_POST['photo']);
 
-    $UpdateSql = "UPDATE `employes` SET matricule=`$matricule`,nom =`$nom`, prenom=`$prenom`, date_naissance=`$date_naissance`,departement =`$departement`, salaire=`$salaire`, fonction=`$fonction`, photo=`$photo`  WHERE id=$id ";
+            $UpdateSql = "UPDATE `employes` SET matricule=`$matricule`,nom =`$nom`, prenom=`$prenom`, date_naissance=`$date_naissance`,departement =`$departement`, salaire=`$salaire`, fonction=`$fonction`, photo=`$photo`  WHERE id=$id ";
 
 
-    $res = mysqli_query($connect, $UpdateSql);
-    if ($res) {
-        header("location: view.php");
-    } else {
-        $erreur = "la mise à jour a échoué.";
-    }
-}
+            $res = mysqli_query($connect, $UpdateSql);
+            if ($res) {
+                header("Location: /kako/Gestion-Employes-brief/view.php");
+            } else {
+                $erreur = "la mise à jour a échoué.";
+            }
+        }
 
-?>
+        ?> -->
 
 
 <!DOCTYPE html>
