@@ -4,7 +4,7 @@ require_once('connect.php');
 
 $id = $_GET['id'];
 $selSql = "SELECT * FROM `employes` WHERE id=$id";
-$res = mysqli_query($con, $selSql);
+$res = mysqli_query($connect, $selSql);
 $r = mysqli_fetch_assoc($res);
 
 if (isset($_POST) & !empty($_POST)) {
@@ -20,7 +20,7 @@ if (isset($_POST) & !empty($_POST)) {
     $UpdateSql = "UPDATE `employes` SET matricule=`$matricule`,nom =`$nom`, prenom=`$prenom`, date_naissance=`$date_naissance`,departement =`$departement`, salaire=`$salaire`, fonction=`$fonction`, photo=`$photo`  WHERE id=$id ";
 
 
-    $res = mysqli_query($con, $UpdateSql);
+    $res = mysqli_query($connect, $UpdateSql);
     if ($res) {
         header("location: view.php");
     } else {

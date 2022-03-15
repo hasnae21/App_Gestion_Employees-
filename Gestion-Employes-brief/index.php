@@ -14,7 +14,7 @@ if (isset($_POST) & !empty($_POST)) {
     $CreateSql = "INSERT INTO `employes` (`matricule`, `nom`, `prenom`, `date_naissance`, `departement`, `salaire`, `fonction`, `photo`)  VALUES
     ('$matricule', '$nom', '$prenom', '$date_naissance', '$departement', '$salaire', '$fonction', '$photo')";
 
-    $res = mysqli_query($connect, $CreateSql) or die(mysqli_error($con));
+    $res = mysqli_query($connect, $CreateSql) or die(mysqli_error($connect));
     if ($res) {
         $message = "insertion reussi avec succès";
     } else {
@@ -35,8 +35,8 @@ if (isset($_POST) & !empty($_POST)) {
     <title>Gestion des Employés</title>
 </head>
 <body>
-
-    <?php include './php/navbar.php'; ?>
+<!-- 
+    <?php include './php/navbar.php'; ?> -->
 
     <div class="container">
         <div class="row pt-4">
@@ -51,7 +51,7 @@ if (isset($_POST) & !empty($_POST)) {
                 </div> <?php } ?>
 
             <form action="" method="POST" class="form-horizontal col-md-6 pt-4" autocomplete="off">
-                <h4 class="text-primary text-uppercase fs-3">Employé caractéristiques:</h4>
+                <h4 class="text-info text-uppercase text-center fs-3">Employé caractéristiques:</h4>
                 <div class="form-group">
                     <label class="col-sm-2 control-label">Matricule:</label>
                     <div class="col-sm-10">
@@ -111,10 +111,8 @@ if (isset($_POST) & !empty($_POST)) {
 
                 <div class="d-grid gap-1 pt-4">
                     <input type="submit" value="submit" 
-                     class="btn btn-primary active ">
-                    <a href="view.php">
-                        <input class="btn active btn-info" type="button" value="voir la liste" >
-                    </a>
+                     class="btn btn-primary">
+                    <a class="btn btn-info active" href="view.php" role="button">voir la liste</a>
                 </div>
             </form>
         </div>
