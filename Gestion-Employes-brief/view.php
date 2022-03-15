@@ -1,9 +1,7 @@
 <?php
-
 require_once('connect.php');
 $sql = "SELECT * FROM `employes` ";
 $res = mysqli_query($con, $sql);
-
 ?>
 
 <!DOCTYPE html>
@@ -98,3 +96,4 @@ $res = mysqli_query($con, $sql);
 </body>
 
 </html>
+
