@@ -35,8 +35,8 @@ if (isset($_POST) & !empty($_POST)) {
     <title>Gestion des Employés</title>
 </head>
 <body>
-<!-- 
-    <?php include './php/navbar.php'; ?> -->
+
+    <?php include './php/navbar.php'; ?> 
 
     <div class="container">
         <div class="row pt-4">

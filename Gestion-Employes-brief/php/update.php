@@ -22,7 +22,7 @@
 
             $res = mysqli_query($connect, $UpdateSql);
             if ($res) {
-                header("Location: /kako/Gestion-Employes-brief/view.php");
+                header("Location: /App_Gestion_Employees-/Gestion-Employes-brief/view.php");
             } else {
                 $erreur = "la mise à jour a échoué.";
             }
