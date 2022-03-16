@@ -1,5 +1,6 @@
 <?php
 require('./php/connect.php');
+
 if (isset($_POST) & !empty($_POST)) {
 
     $matricule = ($_POST['matricule']);
@@ -110,8 +111,7 @@ if (isset($_POST) & !empty($_POST)) {
                 <!-- fin inputs -->
 
                 <div class="d-grid gap-1 pt-4">
-                    <input type="submit" value="submit" 
-                     class="btn btn-primary">
+                    <input type="submit" value="submit" class="btn btn-primary">
                     <a class="btn btn-info active" href="view.php" role="button">voir la liste</a>
                 </div>
             </form>

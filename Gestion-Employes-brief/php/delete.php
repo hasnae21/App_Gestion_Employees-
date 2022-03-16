@@ -1,10 +1,6 @@
 <?php 
-require_once ('connect.php');
-  $id = $_GET['id'];
-  $DelSql = "DELETE FROM `employes` WHERE id=$id";
-  $res = mysqli_query($connect, $DelSql);
-  if ($res) {
-    header("Location: /App_Gestion_Employees-/Gestion-Employes-brief/view.php");
-  }else{
-    echo "Failed to delete";
-  }
+require('connect.php');
+$matricule = $_GET['matricule'];
+$DelSql = " DELETE FROM `employes` WHERE matricule=$matricule";
+$res = mysqli_query($connect, $DelSql);
+header('Location: ../view.php');     
