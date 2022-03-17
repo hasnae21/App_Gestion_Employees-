@@ -28,7 +28,7 @@ if (isset($_POST) & !empty($_POST)) {
     echo  $UpdateSql;
     $res= mysqli_query($connect, $UpdateSql);
     if ($res) {
-        header("Location: view.php");
+        header("Location: /App_Gestion_Employees-/view.php");
     } else {
         $erreur = "la mise à jour a échoué.";
     }

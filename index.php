@@ -55,7 +55,7 @@ if (isset($_POST) & !empty($_POST)) {
                 <div class="form-group">
                     <label class="col-sm-2 control-label">Matricule:</label>
                     <div class="col-sm-10">
-                        <input type="number" name="matricule" placeholder="matricule" class="form-control" required>
+                        <input type="number" name="matricule" class="form-control" required>
                     </div>
                 </div>
 
@@ -111,7 +111,7 @@ if (isset($_POST) & !empty($_POST)) {
 
                 <div class="d-grid gap-1 pt-4">
                     <input type="submit" value="submit" class="btn btn-primary">
-                    <a class="btn btn-info active" href="./php/view.php" role="button">voir la liste</a>
+                    <a class="btn btn-info active" href="/App_Gestion_Employees-/view.php" role="button">voir la liste</a>
                 </div>
             </form>
         </div>

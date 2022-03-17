@@ -1,4 +1,4 @@
-<!--<?php
+<?php
 
 
 require('php/connect.php');
@@ -22,7 +22,7 @@ function filterTable($query)
 }
 
 
-?> -->
+?> 
 
 <!DOCTYPE html>
 <html>
@@ -80,7 +80,7 @@ function filterTable($query)
             </tbody>
         </table>
         <div class="d-grid gap-1 pt-4">
-            <a href="/App_Gestion_Employees-/Gestion-Employes-brief/index.php">
+            <a href="/App_Gestion_Employees-/index.php">
                 <button type="button" class="btn btn-info">
                     Ajouter un nouveau Employé</button>
             </a>
