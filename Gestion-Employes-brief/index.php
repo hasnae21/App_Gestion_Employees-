@@ -1,6 +1,5 @@
 <?php
 require('./php/connect.php');
-
 if (isset($_POST) & !empty($_POST)) {
 
     $matricule = ($_POST['matricule']);

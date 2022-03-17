@@ -1,14 +1,14 @@
-<?php
+<!--<?php
 
 
 require('php/connect.php');
-
-
 if (isset($_POST['Search'])) {
     $valueToSearch = $_POST['valueToSearch'];
     $getcolomn = $_POST['filrerColome'];
+
     $query = "SELECT * FROM `employes` WHERE  $getcolomn  LIKE '%" . $valueToSearch . "%' ";
     $search_result = filterTable($query);
+
 } else {
     $query = "SELECT * FROM `employes`";
     $search_result = filterTable($query);
@@ -20,7 +20,9 @@ function filterTable($query)
     $filter_Result = mysqli_query($connect, $query);
     return $filter_Result;
 }
-?>
+
+
+?> -->
 
 <!DOCTYPE html>
 <html>
@@ -41,7 +43,7 @@ function filterTable($query)
         <table class="table  mt-3">
             <thead>
                 <tr>
-                    <th>#</th>
+                    
                     <th>Photo</th>
                     <th>Matricule</th>
                     <th>Nom</th>
@@ -56,7 +58,7 @@ function filterTable($query)
             <tbody>
                 <?php while ($row = mysqli_fetch_array($search_result)) : ?>
                         <tr>
-                            <td><?php echo $row['id']; ?></td>
+                            <!-- <td><?php //echo $row['id']; ?></td> -->
                             <td><img src="./images/<?php echo $row['photo']; ?>" alt="img" width="100px"> </td>
                             <td><?php echo $row['matricule']; ?></td>
                             <td><?php echo $row['nom']; ?></td>
@@ -67,7 +69,7 @@ function filterTable($query)
                             <td><?php echo $row['fonction']; ?></td>
 
                             <td>
-                                <a href="php/update.php?matricule=<?php echo $row["matricule"];?>"><i class="fa fa-edit fa-2x"></i></a>
+                                <a href="php/update.php?id=<?php echo $row["id"];?>"><i class="fa fa-edit fa-2x"></i></a>
                             </td>
                             <td>
                                 <a href="php/delete.php?matricule=<?php echo $row["matricule"];?>"><i class="fa fa-trash fa-2x red-icon"></i></a>

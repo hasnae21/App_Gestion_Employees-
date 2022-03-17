@@ -38,16 +38,16 @@ function filterTable($query)
             <form class="d-flex" form action="./view.php" method="post">
                 <div class="input-group mb-3">
                     <select class="form-select" aria-label="Default select example" name="filrerColome">
-                        <option selected disabled>SELECT YOU FILTER</option>
+                        <option selected disabled>Selectioner un filter</option>
                         <option value="Matricule">Matricule</option>
                         <option value=" Nom ">Nom</option>
-                        <option value="Prénom  ">Prénom</option>
+                        <option value="Prenom  ">Prénom</option>
                         <option value=" Date de naissance ">Date de naissance</option>
                         <option value=" Salaire ">Salaire</option>
-                        <option value="Département ">Département</option>
+                        <option value="Departement ">Département</option>
                         <option value=" Fonction ">Fonction</option>
                     </select>
-                    <input class="form-control me-2" type="text" placeholder="Rechercher un employé" name="valueToSearch">
+                    <input class="form-control me-2" type="text" placeholder="Rechercher par filter" name="valueToSearch">
                     <input class="btn btn-info" type="submit" value="Search" name="Search">
                 </div>
             </form>

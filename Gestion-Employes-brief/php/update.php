@@ -1,8 +1,8 @@
 <?php 
 require('connect.php');
 
-$matricule = $_GET['matricule'];
-$selSql = "SELECT * FROM `employes` WHERE matricule=$matricule";
+$id = $_GET['id'];
+$selSql = "SELECT * FROM `employes` WHERE id=$id";
 $res = mysqli_query($connect, $selSql);
 $row = mysqli_fetch_assoc($res);
 
@@ -14,12 +14,18 @@ if (isset($_POST) & !empty($_POST)) {
     $departement = ($_POST['departement']);
     $salaire = ($_POST['salaire']);
     $fonction = ($_POST['fonction']);
-    //$photo = ($_POST['photo']);
+    $photo = ($_POST['photo']);
 
-  
+    echo   $matricule;
+    echo  $nom;
+    echo  $prenom;
+    echo  $date_naissance;
+    echo  $departement;
+    echo  $salaire;
+    echo  $fonction;
 
-    $UpdateSql = "UPDATE employes SET matricule=$matricule,nom=$nom, prenom=$prenom, date_naissance=$date_naissance,departement=$departement, salaire=$salaire, fonction=$fonction WHERE matricule=$matricule ";
-echo  $UpdateSql;
+    $UpdateSql = "UPDATE employes SET matricule='$matricule',nom='$nom', prenom='$prenom', date_naissance='$date_naissance',departement='$departement', salaire='$salaire', fonction='$fonction' WHERE id=$id ";
+    echo  $UpdateSql;
     $res= mysqli_query($connect, $UpdateSql);
     if ($res) {
         header("Location: ../view.php");
@@ -95,12 +101,12 @@ echo  $UpdateSql;
                     </div>
                 </div>
 
-                <!-- <div class="form-group">
+                <div class="form-group">
                     <label class="col-sm-2 control-label">Photo:</label>
                     <div class="col-sm-10">
-                        <input type="file" name="photo" class="form-control" value="<?php //echo $row['photo']; ?>" required>
+                        <input type="file" name="photo" class="form-control" value="<?php echo $row['photo']; ?>" required>
                     </div>
-                </div> -->
+                </div> 
                 <!-- fin inputs -->
                 <div class=" pt-4">
                     <input type="submit" value="submit" class="btn btn-info m-3">
