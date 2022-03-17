@@ -111,7 +111,7 @@ if (isset($_POST) & !empty($_POST)) {
 
                 <div class="d-grid gap-1 pt-4">
                     <input type="submit" value="submit" class="btn btn-primary">
-                    <a class="btn btn-info active" href="view.php" role="button">voir la liste</a>
+                    <a class="btn btn-info active" href="./php/view.php" role="button">voir la liste</a>
                 </div>
             </form>
         </div>

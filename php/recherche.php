@@ -35,7 +35,7 @@ function filterTable($query)
     <div class="container">
         <div class="container-fluid">
             <br> <br>
-            <form class="d-flex" form action="./view.php" method="post">
+            <form class="d-flex" form action="view.php" method="post">
                 <div class="input-group mb-3">
                     <select class="form-select" aria-label="Default select example" name="filrerColome">
                         <option selected disabled>Selectioner un filter</option>

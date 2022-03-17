@@ -10,12 +10,12 @@
             </a>
       </li>
       <li class="nav-item">
-      <a class="nav-link active" aria-current="page" href="/App_Gestion_Employees-/Gestion-Employes-brief/view.php">
+      <a class="nav-link active" aria-current="page" href="/App_Gestion_Employees-/php/view.php">
               <p class="text-dark">Liste des employées</p>
             </a>
       </li>
       <li class="nav-item">
-      <a class="nav-link" href="/App_Gestion_Employees-/Gestion-Employes-brief/recherche.php">
+      <a class="nav-link" href="/App_Gestion_Employees-/php/recherche.php">
               <p class="text-primary">Rechercher un Employé</p>
             </a>
       </li>

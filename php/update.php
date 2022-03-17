@@ -28,12 +28,11 @@ if (isset($_POST) & !empty($_POST)) {
     echo  $UpdateSql;
     $res= mysqli_query($connect, $UpdateSql);
     if ($res) {
-        header("Location: ../view.php");
+        header("Location: view.php");
     } else {
         $erreur = "la mise à jour a échoué.";
     }
 }
-//header('Location: ../view.php');  
 ?>
 
 <!DOCTYPE html>
