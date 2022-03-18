@@ -110,8 +110,8 @@ if (isset($_POST) & !empty($_POST)) {
                 <!-- fin inputs -->
 
                 <div class="d-grid gap-1 pt-4">
-                    <input type="submit" value="submit" class="btn btn-primary">
-                    <a class="btn btn-info active" href="/App_Gestion_Employees-/view.php" role="button">voir la liste</a>
+                    <input type="submit" value="submit" class="btn btn-info">
+                    <a class="btn btn-dark active" href="/App_Gestion_Employees-/view.php" role="button">voir la liste</a>
                 </div>
             </form>
         </div>
