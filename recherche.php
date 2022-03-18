@@ -42,7 +42,6 @@ function filterTable($query){
                         <option value=" salaire ">Salaire</option>
                         <option value= "departement ">Département</option>
                         <option value=" fonction ">Fonction</option>
-                        <option value="1">Tous</option>
                     </select>
                     <input class="form-control me-2" type="text" placeholder="Rechercher par filter" name="valueToSearch">
                     <input class="btn btn-primary" type="submit" value="Search" name="Search">
